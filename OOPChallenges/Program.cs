@@ -184,6 +184,55 @@ namespace OOPChallenges
             Overriding bike3 = new Bike3("Yamaha", 120, true);
             bike3.DisplayInfo();
             Console.ReadLine();
+
+            Console.WriteLine("23. Constructor chaining in inheritance");
+            Manager1 manager = new Manager1("Alice", 75000, 10000);
+            manager.DisplayManagerInfo();
+            Console.ReadLine();
+
+            Console.WriteLine("24. Abstract class and Polymorphism");
+            Animal dog = new Dog();
+            dog.MakeSound();
+            Animal cat = new Cat();
+            cat.MakeSound();
+            Console.ReadLine();
+
+            Console.WriteLine("25. Interface vs Inheritance");
+            Robot robot = new Robot();
+            robot.Start();
+            robot.Move();
+            Console.ReadLine();
+
+            Console.WriteLine("26. Sealed class");
+            Account acc = new SavingsAccount();
+            acc.CalculateInterest();
+            Console.ReadLine();
+
+            Console.WriteLine("27. Multiple inheritance");
+            Duck duck = new Duck();
+            duck.Fly();
+            duck.Swim();
+            Console.ReadLine();
+
+            Console.WriteLine("28. Upcasting and Downcasting");
+            Student1 student1 = new Student1();
+            Person person = student1; // Upcasting
+            person.Show();
+            // person.Study(); // Not possible directly
+            Student1 downcastedStudent = (Student1)person; // Downcasting
+            downcastedStudent.Study();
+            Console.ReadLine();
+
+            Console.WriteLine("29. E-Commerce System ");
+            Product laptop = new ElectronicProduct("Laptop", 1000);
+            Product shirt = new ClothingProduct("Shirt", 50);
+            laptop.Display();
+            shirt.Display();
+            Console.ReadLine();
+
+            Console.WriteLine("30. Prevent inheritance using sealed class");
+            Security security = new Security();
+            security.AuthenticateUser();
         }
     }
 }
